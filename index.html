@@ -6,122 +6,67 @@
   <title>Hassan Zannoon — SOC Analyst Portfolio</title>
   <meta name="description" content="Portfolio of Hassan Zannoon — SOC Analyst (Fresher). Projects: SIEM Use Cases, Endpoint Detection Lab, Network Attack Simulation." />
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;color-scheme:dark}
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --muted:#94a3b8;
+      color-scheme:dark;
+    }
+
     *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg),#071023);color:#e6eef6;-webkit-font-smoothing:antialiased}
+
+    body{
+      font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#071023);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+    }
+
     .wrap{max-width:920px;margin:40px auto;padding:28px}
-    header{display:flex;align-items:center;gap:18px}
-    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021022}
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+    }
+
+    .avatar-img{
+      width:84px;
+      height:84px;
+      border-radius:12px;
+      object-fit:cover;
+      border:3px solid rgba(255,255,255,0.06);
+      box-shadow:0 8px 20px rgba(2,6,23,0.6);
+    }
+
     h1{margin:0;font-size:28px}
     p.lead{color:var(--muted);margin:8px 0 22px}
+
     .grid{display:grid;grid-template-columns:1fr;gap:18px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 6px 24px rgba(2,6,23,0.6);
+    }
+
     .projects{display:grid;gap:12px}
-    .proj{padding:12px;border-radius:10px;background:rgba(255,255,255,0.01)}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-    .tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    a.cta{display:inline-block;margin-right:10px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021022;text-decoration:none;font-weight:600}
-    .small{font-size:13px;color:var(--muted)}
-    pre.instructions{white-space:pre-wrap;background:#021426;padding:12px;border-radius:8px;color:#9fd7e2}
-    @media(min-width:800px){.grid{grid-template-columns:1fr 360px}}
-  </style>
-</head>
 
-<body>
-  <div class="wrap">
-    <header>
-      <div class="avatar">HZ</div>
-      <div>
-        <h1>Hassan Zannoon</h1>
-        <p class="lead">Aspiring SOC Analyst • Hands-on with SIEM, Log Analysis, Network Traffic Analysis • Open to entry-level roles & internships</p>
-        <div>
-          <a class="cta" href="#projects">View Projects</a>
-          <a class="cta" href="mailto:hassanzannoon@gmail.com">Contact</a>
-        </div>
-      </div>
-    </header>
+    .proj{
+      padding:12px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.01);
+    }
 
-    <div class="grid" style="margin-top:18px">
-      <main>
-        <section id="projects" class="card">
-          <h2>Selected Projects</h2>
-          <div class="projects">
+    .tags{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:8px;
+    }
 
-            <article class="proj">
-              <h3>SIEM Use Case Implementation (Wazuh)</h3>
-              <p class="small">
-                Built Wazuh SIEM lab, onboarded Windows & Linux endpoints, analyzed event logs,
-                and created detection rules for brute force, new admin creation & suspicious PowerShell.
-                Includes dashboards & MITRE ATT&CK mapping.
-              </p>
-              <div class="tags"><span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Log Analysis</span></div>
-            </article>
-
-            <article class="proj">
-              <h3>Endpoint Detection Lab (Sysmon + ELK)</h3>
-              <p class="small">
-                Configured Sysmon using SwiftOnSecurity config, monitored process & registry activity,
-                ingested events into ELK, and created incident investigation reports.
-              </p>
-              <div class="tags"><span class="tag">Sysmon</span><span class="tag">ELK</span><span class="tag">Forensics</span></div>
-            </article>
-
-            <article class="proj">
-              <h3>Network Attack Simulation</h3>
-              <p class="small">
-                Performed Nmap scans, brute force attempts, and analyzed Suricata/Wazuh alerts.
-                Documented attack paths and IOCs with MITRE mapping.
-              </p>
-              <div class="tags"><span class="tag">Kali</span><span class="tag">Suricata</span><span class="tag">Nmap</span></div>
-            </article>
-
-          </div>
-        </section>
-
-        <section class="card" style="margin-top:12px">
-          <h2>About</h2>
-          <p class="small">
-            I am an entry-level SOC Analyst with hands-on experience in SIEM tools, log analysis,
-            basic incident investigation, and network traffic monitoring. I enjoy learning by building labs and performing detection engineering tasks.
-          </p>
-          <p class="small">
-            Skills: Wazuh, Splunk, Sysmon, ELK, Suricata, Wireshark, Nmap, Windows Event Analysis, MITRE ATT&CK.
-          </p>
-        </section>
-
-        <section class="card" style="margin-top:12px">
-          <h2>Resume & GitHub</h2>
-          <p class="small">Download my resume: <a href="resume.pdf" target="_blank">Resume (PDF)</a></p>
-          <p class="small">GitHub: <a href="https://github.com/hassanzannoon-sudo/hassanzannoon.github.io" target="_blank">github.com/hassanzannoon-sudo</a></p>
-        </section>
-      </main>
-
-      <aside>
-        <div class="card">
-          <h3>Quick Info</h3>
-          <p class="small"><strong>Email:</strong> hassanzannoon@gmail.com</p>
-          <p class="small"><strong>Phone:</strong> 80899 39738</p>
-          <p class="small"><strong>Location:</strong> Bangalore, India</p>
-          <hr />
-          <h4>Deployment Instructions</h4>
-<pre class="instructions">1) Upload this index.html to your GitHub repo
-   hassanzannoon.github.io (or any repo)
-2) Add resume.pdf
-3) GitHub Pages will publish automatically
-</pre>
-        </div>
-
-        <div class="card" style="margin-top:12px">
-          <h4>Note</h4>
-          <p class="small">Add links to detailed project reports or GitHub repos to strengthen your portfolio.</p>
-        </div>
-      </aside>
-    </div>
-
-    <footer>
-      <p class="small">Built for recruiters to easily review skills, projects & resume.</p>
-    </footer>
-  </div>
-</body>
-</html>
+    .tag{
+      bac
