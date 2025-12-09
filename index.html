@@ -1,91 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hassan Zannoon — SOC Analyst (Fresher)</title>
-<meta name="description" content="Hassan Zannoon — Entry-level SOC Analyst. Projects: SIEM use-cases, Sysmon endpoint detection, network attack simulation. Resume & contact." />
-<meta name="theme-color" content="#0f1724"/>
-<style>
-  :root{
-    --bg:#0f1724;
-    --panel:#0b1220;
-    --muted:#9aa8b6;
-    --accent:#06b6d4;
-    --glass: rgba(255,255,255,0.03);
-    --radius:14px;
-    --container:1100px;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
-    background: linear-gradient(180deg,#071021 0%, #081426 60%);
-    color:#e8f1f7;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    padding:36px 20px;
-    display:flex;
-    justify-content:center;
-  }
-  .wrap{max-width:var(--container);width:100%}
-  header{
-    display:flex;
-    gap:18px;
-    align-items:center;
-    margin-bottom:28px;
-  }
-  .avatar{
-    width:110px;height:110px;border-radius:16px;overflow:hidden;
-    flex: 0 0 110px;
-    border:3px solid rgba(255,255,255,0.05);
-    background:linear-gradient(135deg,var(--accent),#7c3aed);
-    box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-  }
-  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-  .head {
-    display:flex;flex-direction:column;justify-content:center;
-    gap:6px;
-  }
-  .name{font-size:28px;font-weight:700;letter-spacing:-0.2px}
-  .subtitle{color:var(--muted);font-size:14px}
-  .actions{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap}
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;
-    text-decoration:none;font-weight:600;font-size:14px;border:0;cursor:pointer;
-  }
-  .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#02212a}
-  .btn-ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
-  main{display:grid;grid-template-columns:1fr 360px;gap:24px}
-  .panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.55)}
-  h2{margin:0 0 12px 0;font-size:20px}
-  /* Projects */
-  .projects{display:grid;gap:12px}
-  .card{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
-  .card-thumb{width:92px;height:64px;border-radius:8px;background:#07131a;flex:0 0 92px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
-  .card-body{flex:1}
-  .card-title{font-weight:700;margin:0 0 6px 0}
-  .card-desc{margin:0;color:var(--muted);font-size:14px}
-  .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
-  .tag{background:rgba(255,255,255,0.03);padding:6px 9px;border-radius:999px;font-size:12px;color:var(--muted)}
-  /* Sidebar */
-  aside .meta-row{margin-bottom:12px}
-  aside .meta-row strong{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}
-  aside .link{color:var(--accent);text-decoration:none;font-weight:700}
-  /* Resume area */
-  .resume-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
-  /* Footer */
-  footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
-  /* small screens */
-  @media(max-width:880px){
-    main{grid-template-columns:1fr; }
-    aside{order:2}
-  }
-  /* subtle hover */
-  .card:hover{transform:translateY(-4px);transition:transform .18s ease}
-  .btn:active{transform:translateY(1px)}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hassan Zannoon — SOC Analyst (Fresher)</title>
+  <meta name="description" content="Hassan Zannoon — Entry-level SOC Analyst. Projects: SIEM use-cases, Sysmon endpoint detection, network attack simulation. Resume & contact." />
+  <meta name="theme-color" content="#0f1724"/>
+  <style>
+    :root{
+      --bg:#071426;
+      --panel:#0b1220;
+      --muted:#9aa8b6;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+      -webkit-font-smoothing:antialiased;
+      color:#e8f1f7;
+      background:linear-gradient(180deg,#071021 0%, #081426 70%);
+      padding:34px 18px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{max-width:var(--maxw);width:100%}
+    header{display:flex;gap:18px;align-items:center;margin-bottom:22px}
+    .avatar{width:110px;height:110px;border-radius:14px;overflow:hidden;border:3px solid rgba(255,255,255,0.05);box-shadow:0 12px 30px rgba(0,0,0,0.6)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .head{display:flex;flex-direction:column;gap:6px}
+    .name{font-weight:700;font-size:28px}
+    .subtitle{color:var(--muted);font-size:14px}
+    .actions{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#02212a}
+    .btn-ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+    main{display:grid;grid-template-columns:1fr 360px;gap:22px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.55)}
+    h2{margin:0 0 12px 0;font-size:18px}
+    .projects{display:grid;gap:12px}
+    .card{display:flex;gap:14px;align-items:flex-start;padding:12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .card-thumb{width:96px;height:64px;border-radius:8px;background:#07131a;flex:0 0 96px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+    .card-body{flex:1}
+    .card-title{font-weight:700;margin:0 0 6px 0}
+    .card-desc{margin:0;color:var(--muted);font-size:14px}
+    .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.03);padding:6px 9px;border-radius:999px;font-size:12px;color:var(--muted)}
+    aside .meta-row{margin-bottom:12px}
+    aside .meta-row strong{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}
+    .small{color:var(--muted);font-size:14px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:880px){
+      main{grid-template-columns:1fr}
+      aside{order:2}
+    }
+    .card:hover{transform:translateY(-4px);transition:transform .18s ease}
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -94,10 +67,10 @@
         <img src="avatar.jpg" alt="Hassan Zannoon">
       </div>
       <div class="head">
-        <div style="display:flex;align-items:center;gap:16px;">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <div>
             <div class="name">Hassan Zannoon</div>
-            <div class="subtitle">Aspiring SOC Analyst • SIEM • Log Analysis • Network Traffic • Incident Response</div>
+            <div class="subtitle">Aspiring SOC Analyst • SIEM • Log Analysis • Network Detection • Incident Response</div>
           </div>
         </div>
 
@@ -115,30 +88,31 @@
           <h2>Selected Projects</h2>
 
           <div class="projects" style="margin-top:10px;">
+
             <article class="card">
-              <div class="card-thumb">Screenshot</div>
+              <div class="card-thumb">SIEM</div>
               <div class="card-body">
                 <div class="card-title">SIEM Use Case Implementation (Wazuh)</div>
-                <p class="card-desc">Built Wazuh SIEM lab, onboarded endpoints, created detection rules, dashboards, and MITRE mapping. <a href="#" style="color:var(--accent)">View details →</a></p>
+                <p class="card-desc">Built a Wazuh lab, onboarded endpoints, created detection rules and dashboards. <a href="projects/siem-usecase/README.md" style="color:var(--accent);text-decoration:none">View details →</a></p>
                 <div class="tags"><span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Detection</span></div>
               </div>
             </article>
 
             <article class="card">
-              <div class="card-thumb">Screenshot</div>
+              <div class="card-thumb">Sysmon</div>
               <div class="card-body">
-                <div class="card-title">Endpoint Detection (Sysmon + ELK)</div>
-                <p class="card-desc">Sysmon configured with detection rules; telemetry ingested into ELK and used for incident investigations. <a href="#" style="color:var(--accent)">View details →</a></p>
-                <div class="tags"><span class="tag">Sysmon</span><span class="tag">ELK</span></div>
+                <div class="card-title">Endpoint Detection Lab (Sysmon + ELK)</div>
+                <p class="card-desc">Configured Sysmon, forwarded telemetry to ELK and performed incident investigations. <a href="projects/endpoint-detection/README.md" style="color:var(--accent);text-decoration:none">View details →</a></p>
+                <div class="tags"><span class="tag">Sysmon</span><span class="tag">ELK</span><span class="tag">Forensics</span></div>
               </div>
             </article>
 
             <article class="card">
-              <div class="card-thumb">Screenshot</div>
+              <div class="card-thumb">Network</div>
               <div class="card-body">
                 <div class="card-title">Network Attack Simulation</div>
-                <p class="card-desc">Simulated scans and brute-force attempts, captured network alerts (Suricata) and produced IOCs. <a href="#" style="color:var(--accent)">View details →</a></p>
-                <div class="tags"><span class="tag">Kali</span><span class="tag">Suricata</span></div>
+                <p class="card-desc">Simulated scans and brute-force attempts, captured Suricata alerts and produced IOCs. <a href="projects/network-attack-sim/README.md" style="color:var(--accent);text-decoration:none">View details →</a></p>
+                <div class="tags"><span class="tag">Kali</span><span class="tag">Suricata</span><span class="tag">Nmap</span></div>
               </div>
             </article>
 
@@ -147,9 +121,7 @@
 
         <div class="panel" style="margin-top:18px">
           <h2>About</h2>
-          <p style="color:var(--muted);line-height:1.6">
-            Entry-level SOC Analyst with hands-on labs in SIEM, endpoint telemetry and network detection. Comfortable with log analysis, alert triage and incident investigation. Eager to join an SOC L1 role or internship.
-          </p>
+          <p class="small">Entry-level SOC Analyst with hands-on labs in SIEM, endpoint telemetry and network detection. Comfortable with log analysis, alert triage and incident investigation. Open to internships and entry-level SOC roles.</p>
         </div>
       </section>
 
@@ -158,7 +130,7 @@
           <h2>Quick Info</h2>
           <div class="meta-row">
             <strong>Email</strong>
-            <div><a class="link" href="mailto:hassanzannoon@gmail.com">hassanzannoon@gmail.com</a></div>
+            <div><a style="color:var(--accent);text-decoration:none" href="mailto:hassanzannoon@gmail.com">hassanzannoon@gmail.com</a></div>
           </div>
           <div class="meta-row">
             <strong>Phone</strong>
@@ -171,7 +143,7 @@
 
           <div style="margin-top:12px">
             <h3 style="margin:0 0 8px 0;font-size:16px">Resume & Links</h3>
-            <div class="resume-actions">
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
               <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Open Resume</a>
               <a class="btn btn-ghost" href="https://linkedin.com/in/hassanzannoon" target="_blank" rel="noopener">LinkedIn</a>
             </div>
@@ -180,15 +152,13 @@
 
         <div class="panel" style="margin-top:18px">
           <h2>How to use</h2>
-          <p class="small">For each project, add a small repository link or a PDF report. If you'd like, I can generate README case-studies for each project (commands, evidence, IOC lists).</p>
+          <p class="small">Click any project → then click the README entries for evidence, commands, and screenshots. If you want, I can convert the README files into separate small PDF reports to link here.</p>
         </div>
       </aside>
     </main>
 
     <footer>
-      <div style="max-width:900px;margin:auto">
-        <p class="small">Designed for recruiters — clear, concise & mobile-friendly.</p>
-      </div>
+      <p class="small">Designed for recruiters — clear, concise & mobile-friendly.</p>
     </footer>
   </div>
 </body>
